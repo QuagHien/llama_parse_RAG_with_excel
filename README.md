@@ -1,5 +1,14 @@
 # LlamaParse
 
+RAG với file excel cho chatbot
+Thách thức với chatbot, tool AI hiện này là khó xử lý các file excel và có số liệu như bảng dưới đây.
+Trên nền tảng chatgpt thì openai họ sử dụng python để đọc và xử lý file, trước khi model AI nhảy vào tham gia trả lời dựa trên kết quả do python trả về, nhưng cách này rất phức tạp, cũng dễ xảy ra lỗi, và cũng khó nếu các bạn muốn phát triển chatbot riêng.
+Tệp Excel thường có bố cục nội dung trên định dạng lưới - mỗi sheet lại có nhiều bảng rời rạc trên một trang tính, đa phần không được sắp xếp dễ dọc vì mỗi người làm một kiểu bảng tính khác nhau.
+Trước đây, nhiều phương pháp làm đứt gãy các bảng tính và khiến chúng chồng lên nhau, gây ra hiện tượng ảo giác ở model AI trong việc hiểu dữ liệu này.
+Như các bài chia sẻ trước đây, phương pháp RAG hiện nay vẫn là cách tốt và rẻ tiền nhất để train các dữ liệu cho AI trả lời. 
+Và LlamaIndex một đơn vị chuyên tạo RAG cho các chatbot đã cung cấp cách thức rất tốt để đọc, hiểu, embedding các dữ liệu trên file excel.
+Follow Đặng Hữu Sơn cập nhật thêm nhiều bài viết về AI
+--
 LlamaParse is an API created by LlamaIndex to efficiently parse and represent files for efficient retrieval and context augmentation using LlamaIndex frameworks.
 
 LlamaParse directly integrates with [LlamaIndex](https://github.com/run-llama/llama_index).
